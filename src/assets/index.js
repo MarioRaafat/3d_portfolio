@@ -32,7 +32,7 @@ import Painting from "./projects/Painting.jpeg";
 import AirBnB from "./projects/AirBnB.png";
 
 import WhatsApp from "./Contacts/Whatsapp.png";
-import LinkedIn from "./Contacts/LinkedIn.png";
+import LinkedIn from "./Contacts/Linkedin.png";
 import Gmail from "./Contacts/Gmail.jpeg";
 import Instagram from "./Contacts/Instagram.jpeg";
 
