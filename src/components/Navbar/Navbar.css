@@ -107,17 +107,17 @@ nav ul{
     padding: 10px;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
-    .nav-links {
-        display: none !important; /* Hide the full nav links */
+    nav .nav-links {
+        display: none; /* Hide the full nav links */
     }
 
     .hamburger-menu {
         display: block; /* Show the hamburger icon */
     }
 
-    .mobile-menu {
-        width: 150px;
+    /* Open the mobile menu when the hamburger icon is clicked */
+    .mobile-menu.open {
+        display: block; /* Show the mobile menu */
     }
 }

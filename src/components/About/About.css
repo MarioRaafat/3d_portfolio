@@ -1,3 +1,7 @@
+/*  */
+
+
+/* General Styles */
 .about-section {
     padding: 50px;
     display: flex;
@@ -29,7 +33,7 @@
     align-items: flex-start;
 }
 
-
+/* Services Section */
 .about-services {
     text-align: center;
     padding: 20px;
@@ -78,4 +82,84 @@
 .service-title {
     font-size: 20px;
     margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 30px;
+    }
+
+    .about-text {
+        margin-left: 0;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 0.9rem;
+        max-width: 80%;
+    }
+
+    .about-title,
+    .service-title {
+        font-size: 28px;
+    }
+
+    .services-container {
+        gap: 20px;
+    }
+
+    .service {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .about-title,
+    .service-title {
+        font-size: 24px;
+    }
+
+    .services-container {
+        gap: 15px;
+    }
+
+    .service {
+        padding: 15px 10px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .service-title {
+        font-size: 16px;
+    }
 }

@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import {contact_pic} from "../../assets/index.js";
+// import {contact_pic} from "../../assets/index.js";
 import { styles } from "../../styles";
 import { SectionWrapper } from "../../hoc";
 import "./Contact.css";
@@ -37,4 +36,5 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+const WrappedContact = SectionWrapper(Contact, "contact");
+export default WrappedContact;

@@ -4,49 +4,86 @@
 }
 
 .tech-title {
-    font-size: 36px;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: 700;
 }
 
 .tech-container {
     display: flex;
-    gap: 10px;
-    justify-items: center;
+    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    margin: 0 auto; /* Center align container */
+    max-width: 1200px; /* Max width to prevent overexpansion on larger screens */
 }
 
 .tech-card {
     background-color: hsl(219, 54%, 12%);
-    border-radius: 50%;
-    padding: 10px;
+    border-radius: 50%; 
+    padding: 20px;
     text-align: center;
     display: flex;
-    transition: transform 0.3s, border-color 0.3s;
-    width: 15%;
-    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 170px; /* Limited width for consistency across devices */
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box; /* Ensures padding does not affect width */
 }
 
-.tech-text{
-    font-size: 12px;
+.tech-text {
+    font-size: 1rem;
     color: hsl(0, 0%, 70%);
     font-weight: 500;
-    max-width: 70px;
+    max-width: 100px; 
     padding-bottom: 10px;
+    margin-top: 10px;
 }
 
 .tech-icon {
-    width: 70%;
-    height: 70%;
-    margin-bottom: 20px;
+    width: 80px; /* Fixed width for uniformity */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tech-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(255, 243, 150, 0.1);
 }
 
 
-.tech-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(255, 243, 150, 0.1);
+@media (max-width: 768px) {
+    .tech-container {
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .tech-card {
+        max-width: 120px; 
+    }
+
+    .tech-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-title {
+        font-size: 2rem; 
+    }
+
+    .tech-card {
+        max-width: 100px;
+        padding: 15px; 
+    }
+
+    .tech-icon {
+        width: 60px;
+    }
+
+    .tech-text {
+        font-size: 0.7rem;
+        max-width: 80px; 
+    }
 }
