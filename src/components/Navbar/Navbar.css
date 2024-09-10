@@ -17,7 +17,18 @@ nav {
     box-shadow: 0 5px 10px rgba(255, 243, 150, 0.1);
 }
 
-img{
+.left-nav-holder{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.left-nav-holder:hover {
+    cursor: pointer;
+    color: #935AF6FF;
+}
+
+img {
     width: 50px;
     height: 50px;
     margin: 10%;
@@ -28,12 +39,9 @@ nav .author-name {
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
-    position: absolute;
-    top: 33%;
-    left: 10%;
     cursor: pointer;
     transition: all 0.3s ease;
-    padding-left: 20px;
+    margin-left: 10px; /* Adjusted for better spacing */
 }
 
 nav .nav-links {
@@ -49,41 +57,39 @@ nav .nav-link {
     transition: all 0.3s ease;
 }
 
-a{
+a {
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
-nav a:hover{
+nav a:hover {
     color: #935AF6FF;
 }
 
-nav li{
+nav li {
     list-style: none;
     margin: 0 10px;
     text-decoration: none;
     cursor: pointer;
 }
 
-nav ul{
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 20px;
 }
 
-
-/* Hamburger menu icon for smaller screens */
+/* Improved hamburger menu styles for mobile responsiveness */
 .hamburger-menu {
-    display: none; /* Hidden by default */
+    display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
 
-/* Mobile menu dropdown */
 .mobile-menu {
-    display: none; /* Hidden by default */
+    display: none;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -92,6 +98,8 @@ nav ul{
     right: 15px;
     background-color: #333;
     border: 1px solid #444;
+    width: 100%; /* Adjusted to take full width */
+    max-width: 200px; /* Added max-width for better control */
 }
 
 .mobile-menu li {
@@ -107,17 +115,33 @@ nav ul{
     padding: 10px;
 }
 
+/* Enhanced media query for better mobile responsiveness */
 @media (max-width: 768px) {
-    nav .nav-links {
-        display: none; /* Hide the full nav links */
+    .nav-links {
+        display: none !important;
     }
 
     .hamburger-menu {
-        display: block; /* Show the hamburger icon */
+        display: block;
     }
 
-    /* Open the mobile menu when the hamburger icon is clicked */
-    .mobile-menu.open {
-        display: block; /* Show the mobile menu */
+    .mobile-menu {
+        width: 100%; /* Adjusted width for better mobile experience */
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 5%; /* Increased padding for smaller screens */
+    }
+
+    .mobile-menu a {
+        font-size: 16px; /* Slightly reduced font size for smaller screens */
+        padding: 8px; /* Adjusted padding */
+    }
+
+    .author-name {
+        font-size: 14px; /* Reduced font size for better fit on smaller screens */
+        left: 5%; /* Adjusted left positioning */
     }
 }

@@ -10,6 +10,13 @@ const Navbar = () => {
     const [mode, setMode] = useState("");
     const [active, setActive] = useState("");
 
+    const handleClick = () => {
+        window.history.pushState(
+            null,
+            document.title,
+            window.location.pathname + window.location.search
+        )};
+
     function handleMenuToggle() {
     setMode(mode === "open" ? "" : "open");
         const mobileMenu = document.querySelector('.mobile-menu');
@@ -25,18 +32,13 @@ const Navbar = () => {
     return (
     <>
         <nav>
-            {/*<div className="left-nav-holder">*/}
-            <div>
-                <a onClick={()=>
-                    window.scrollTo(0, 0)
-                    
-                } href="#home">
-                    <img src={logo} alt="logo"/>
-                    <span className="author-name">Mario Raafat | Portfolio </span>
-                </a>
+            <div className="left-nav-holder" onClick={() => {
+                    window.scrollTo(0, 0);
+                    handleClick();
+                }}>
+                    <div><img src={logo} alt="logo"/></div>
+                    <div className="author-name">Mario Raafat | Portfolio </div>
             </div>
-
-            {/*</div>*/}
 
             <div className="right-nav-holder">
                 <ul className="nav-links">
