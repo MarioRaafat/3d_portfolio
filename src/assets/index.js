@@ -22,6 +22,7 @@ import reactjs from "./tech/reactjs.png";
 import mssql from "./tech/mssql.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import redis from "./tech/redis.png";
 
 import ALX from "./company/ALX.jpeg";
 import CUFE from "./company/CUFE.jpeg";
@@ -55,6 +56,7 @@ export {
   html,
   flask,
   mssql,
+  redis,
   javascript,
   mongodb,
   nodejs,

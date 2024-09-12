@@ -26,6 +26,7 @@ import {
     github,
     mssql,
     flask,
+    redis,
 } from "../assets";
 
 export const navLinks = [
@@ -107,14 +108,18 @@ const technologies = [
         name: "docker",
         icon: docker,
     },
+    {
+        name: "Flask",
+        icon: flask,
+    },
+    {
+        name: "mssql",
+        icon: mssql,
+    },
     // {
-    //     name: "Flask",
-    //     icon: flask,
+    //     name: "redis",
+    //     icon: redis,
     // },
-    // {
-    //     name: "mssql",
-    //     icon: mssql,
-    // }
 ];
 
 const experience = [
