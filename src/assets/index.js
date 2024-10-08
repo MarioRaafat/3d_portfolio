@@ -31,6 +31,7 @@ import Smart_Car from "./projects/Smart_Car.jpeg";
 import Shell from "./projects/Shell.png";
 import Painting from "./projects/Painting.jpeg";
 import AirBnB from "./projects/AirBnB.png";
+import ChatAppIcon from "./projects/ChatAppIcon.png";
 
 import WhatsApp from "./Contacts/Whatsapp.png";
 import LinkedIn from "./Contacts/Linkedin.png";
@@ -69,6 +70,7 @@ export {
   Shell,
   Painting,
   AirBnB,
+  ChatAppIcon,
   WhatsApp,
   LinkedIn,
   Gmail,
