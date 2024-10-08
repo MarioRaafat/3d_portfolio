@@ -167,7 +167,7 @@ const experience = [
 
 const projects = [
     {
-        name: "Real-time Chat Application",
+        name: "ChatMe",
         description:
             "A full-featured real-time chat application built with Node.js, Express, and MongoDB, offering direct messaging, group chats, file sharing, and real-time updates using web sockets.",
         tags: [
