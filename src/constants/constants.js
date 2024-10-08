@@ -169,23 +169,19 @@ const projects = [
     {
         name: "Real-time Chat Application",
         description:
-            "A full-featured real-time chat application built with Node.js, Express, and MongoDB, offering direct messaging, group chats, file sharing, and real-time updates using web sockets. It features user profile management and a mobile-responsive interface similar to WhatsApp.",
+            "A full-featured real-time chat application built with Node.js, Express, and MongoDB, offering direct messaging, group chats, file sharing, and real-time updates using web sockets.",
         tags: [
             {
-                name: "Node.js && Express",
+                name: "Express",
                 color: "blue-text-gradient",
             },
             {
-                name: "Socket.io",
+                name: "MongoDB",
                 color: "green-text-gradient",
             },
             {
                 name: "React",
                 color: "pink-text-gradient",
-            },
-            {
-                name: "MongoDB",
-                color: "yellow-text-gradient",
             },
         ],
         icon: ChatAppIcon,
