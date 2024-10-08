@@ -169,7 +169,7 @@ const projects = [
     {
         name: "ChatMe",
         description:
-            "A full-featured real-time chat application built with Node.js, Express, and MongoDB, offering direct messaging, group chats, file sharing, and real-time updates using web sockets.",
+            "A full-featured real-time chat application built with Node.js, Express, and MongoDB with RESTful APIs, offering direct messaging, group chats, file sharing, and real-time updates using web sockets. It features user profile management and a mobile-responsive interface.",
         tags: [
             {
                 name: "Express",
