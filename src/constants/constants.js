@@ -18,6 +18,7 @@ import {
     Painting,
     Shell,
     Smart_Car,
+    ChatAppIcon,
     AirBnB,
     WhatsApp,
     LinkedIn,
@@ -165,6 +166,32 @@ const experience = [
 ];
 
 const projects = [
+    {
+        name: "Real-time Chat Application",
+        description:
+            "A full-featured real-time chat application built with Node.js, Express, and MongoDB, offering direct messaging, group chats, file sharing, and real-time updates using web sockets. It features user profile management and a mobile-responsive interface similar to WhatsApp.",
+        tags: [
+            {
+                name: "Node.js && Express",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "Socket.io",
+                color: "green-text-gradient",
+            },
+            {
+                name: "React",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "MongoDB",
+                color: "yellow-text-gradient",
+            },
+        ],
+        icon: ChatAppIcon,
+        source_code_link: "https://github.com/MarioRaafat/Real-time-Chat-Application",
+    },
+
     {
         name: "AirBnB Console",
         description:
