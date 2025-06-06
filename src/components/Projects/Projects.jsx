@@ -14,7 +14,7 @@ const Projects = () => {
         <Tilt className='xs:w-[250px] w-full'>
             <motion.div
                 variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-                className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+                className='w-full green-pink-gradient p-[1px] rounded-[20px]'
             >
                 <div className="project">
                     <div className="git-icon">
@@ -22,11 +22,11 @@ const Projects = () => {
                     </div>
                     <img src={obj.icon} alt={obj.name} className='project-icon'/>
                     <h3 className='project-title'> <h1>{obj.name}</h1> </h3>
-                    <div className="project-text">
-                        <div className="project-description">
+                    <div className="project-text flex flex-col justify-center items-center gap-3">
+                        <div className="project-description w-full text-center">
                             {obj.description}
                         </div>
-                        <div className="project-tags">
+                        <div className="project-tags flex flex-wrap justify-center items-center gap-0 w-full flex-row">
                             {obj.tags.map((tag, index) => (
                                 <span key={index} className={`tag ${tag.color}`}>{tag.name}</span>
                             ))}

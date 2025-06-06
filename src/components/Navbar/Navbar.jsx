@@ -1,14 +1,18 @@
 // import React, {useState, useEffect} from 'react'
 // import { Link } from 'react-router-dom'
 import {useState} from 'react'
-import {logo, menu, close} from '../../assets/index.js'
+import {
+    //logo,
+    menu,
+    close
+} from '../../assets/index.js'
 import { navLinks } from '../../constants/constants.js'
 // import { styles } from '../../styles.js'
 import "./Navbar.css"
 
 const Navbar = () => {
     const [mode, setMode] = useState("");
-    const [active, setActive] = useState("");
+    //const [active, setActive] = useState("");
 
     const handleClick = () => {
         window.history.pushState(
@@ -30,13 +34,13 @@ const Navbar = () => {
     }
 
     return (
-    <>
+    <div className="h-16 flex justify-between items-center navbar">
         <nav>
             <div className="left-nav-holder" onClick={() => {
                     window.scrollTo(0, 0);
                     handleClick();
                 }}>
-                    <div><img src={logo} alt="logo"/></div>
+                    {/*<div><img src={logo} alt="logo"/></div>*/}
                     <div className="author-name">Mario Raafat | Portfolio </div>
             </div>
 
@@ -44,7 +48,7 @@ const Navbar = () => {
                 <ul className="nav-links">
                     {navLinks.map((link, index) => (
                         <li key={index} className="nav-link" onClick={() => {
-                            setActive(link.title);
+                            // setActive(link.title);
                         }}>
                             <a href={`#${link.id}`}>{link.title}</a>
                         </li>
@@ -64,7 +68,7 @@ const Navbar = () => {
                 ))}
             </ul>
         </nav>
-    </>
+    </div>
     )
 }
 

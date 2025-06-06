@@ -23,15 +23,35 @@ import mssql from "./tech/mssql.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import redis from "./tech/Redis.png";
+import postgresql from "./tech/Postgre.png";
+import mysql from "./tech/mySQL.png"
+import FastAPI from "./tech/FastAPI.png"
+import prisma from "./tech/Prisma.png"
+import sqlalchemy from "./tech/SQLalchemy.png"
+import kubernetes from "./tech/kubernetes.png"
+// import websockets from "./tech/websockets.png"
+import redux from "./tech/redux.png"
+import c from "./tech/C.png"
+import cpp from "./tech/CPP.png"
+import python from "./tech/Python.png"
+import sql from "./tech/SQL.png"
+import nosql from "./tech/NoSQL.png"
 
 import ALX from "./company/ALX.jpeg";
 import CUFE from "./company/CUFE.jpeg";
+import SlashHub from "./company/SlashHub.png";
 
 import Smart_Car from "./projects/Smart_Car.jpeg";
 import Shell from "./projects/Shell.png";
 import Painting from "./projects/Painting.jpeg";
 import AirBnB from "./projects/AirBnB.png";
 import ChatAppIcon from "./projects/ChatAppIcon.webp";
+import BricksBreaker from "./projects/Bricks.jpeg";
+import ISchool from "./projects/ISchool.png";
+import FashionAssistant from "./projects/Fashion.png";
+import SearchEngine from "./projects/SearchEng.png"
+import GamingRobot from "./projects/gamingRobot.jpeg"
+import MiniKernel from "./projects/miniKernel.jpeg"
 
 import WhatsApp from "./Contacts/Whatsapp.png";
 import LinkedIn from "./Contacts/Linkedin.png";
@@ -64,12 +84,32 @@ export {
   reactjs,
   tailwind,
   typescript,
+  mysql,
+  postgresql,
+  FastAPI,
+  prisma,
+  sqlalchemy,
+  kubernetes,
+  // websockets,
+  redux,
+  c,
+  cpp,
+  python,
+  sql,
+  nosql,
   ALX,
   CUFE,
+  SlashHub,
   Smart_Car,
   Shell,
   Painting,
   AirBnB,
+  BricksBreaker,
+  ISchool,
+  FashionAssistant,
+  SearchEngine,
+  GamingRobot,
+  MiniKernel,
   ChatAppIcon,
   WhatsApp,
   LinkedIn,

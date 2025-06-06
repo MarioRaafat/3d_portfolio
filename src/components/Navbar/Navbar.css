@@ -1,5 +1,6 @@
 nav {
     display: flex;
+    height: inherit;
     flex: 1;
     justify-content: space-between;
     align-items: center;

@@ -8,7 +8,7 @@ const Tech = () => {
     <>
       <div className="tech-section">
         <div className="tech-title">
-          Technologies
+          Tech & Skills
         </div>
 
         <div className="tech-container">
