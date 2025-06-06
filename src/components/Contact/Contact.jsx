@@ -60,7 +60,7 @@ const Contact = () => {
 
     // Send data to backend
     try {
-      const response = await fetch("http://localhost:5000/send-message", {
+      const response = await fetch("https://your-app.vercel.app/api/send-message", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...formData, recaptchaToken }),
